@@ -109,3 +109,12 @@ UltraMNet/models/         # 训练产物：best_*/last_* 的 .safetensors
 
 MLX 是训练/推理主线，PyTorch 版只用于对照与权重格式转换（`convert_to_pytorch.py`），
 两条实现的结构参数一一对应，可直接比参数量与 FLOPs。
+
+## License
+
+MIT，见 [`LICENSE`](LICENSE)。
+
+权重与数据集都不随仓库分发（也不发 Releases）：训练脚本完整可复现，权重需在本地训练生成
+（`python -m UltraMNet.train` / `python -m UltraMNet.train_nano`，产物落在被 git 忽略的
+`UltraMNet/models/`）。
+
