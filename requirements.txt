@@ -1,0 +1,14 @@
+# Core stack — MLX (Apple Silicon only)
+mlx>=0.18
+numpy
+scipy
+
+# Inference visualisation
+matplotlib
+
+# Weight format used by UltraMNet/models/*.safetensors
+safetensors
+
+# Optional — only needed by the PyTorch variants and the MLX -> PyTorch converter:
+#   UltraMNet/model_pytorch.py, UltraMNet/model_nano_pytorch.py, UltraMNet/convert_to_pytorch.py
+# torch>=2.0
